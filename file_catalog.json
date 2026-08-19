@@ -1,0 +1,378 @@
+[
+  {
+    "path": "allied_society/dialogues_en.json",
+    "es_path": "allied_society/dialogues_es.json",
+    "total_keys": 21841,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "allied_society/duty_list_en.json",
+    "es_path": "allied_society/duty_list_es.json",
+    "total_keys": 2394,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "allied_society/journal_en.json",
+    "es_path": "allied_society/journal_es.json",
+    "total_keys": 2976,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "chronicles/dialogues_en.json",
+    "es_path": "chronicles/dialogues_es.json",
+    "total_keys": 15370,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "chronicles/duty_list_en.json",
+    "es_path": "chronicles/duty_list_es.json",
+    "total_keys": 865,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "chronicles/journal_en.json",
+    "es_path": "chronicles/journal_es.json",
+    "total_keys": 1225,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "city_intro/dialogues_en.json",
+    "es_path": "city_intro/dialogues_es.json",
+    "total_keys": 42,
+    "translated_keys": 42,
+    "progress": 100.0,
+    "has_es": true
+  },
+  {
+    "path": "city_intro/duty_list_en.json",
+    "es_path": "city_intro/duty_list_es.json",
+    "total_keys": 1,
+    "translated_keys": 1,
+    "progress": 100.0,
+    "has_es": true
+  },
+  {
+    "path": "city_intro/journal_en.json",
+    "es_path": "city_intro/journal_es.json",
+    "total_keys": 3,
+    "translated_keys": 3,
+    "progress": 100.0,
+    "has_es": true
+  },
+  {
+    "path": "class_job/dialogues_en.json",
+    "es_path": "class_job/dialogues_es.json",
+    "total_keys": 49483,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "class_job/duty_list_en.json",
+    "es_path": "class_job/duty_list_es.json",
+    "total_keys": 4200,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "class_job/journal_en.json",
+    "es_path": "class_job/journal_es.json",
+    "total_keys": 5607,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "combat_actions_traits/actions_en.json",
+    "es_path": "combat_actions_traits/actions_es.json",
+    "total_keys": 143057,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "combat_actions_traits/status_effects_en.json",
+    "es_path": "combat_actions_traits/status_effects_es.json",
+    "total_keys": 21495,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "combat_actions_traits/traits_en.json",
+    "es_path": "combat_actions_traits/traits_es.json",
+    "total_keys": 3221,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/01_arr_2_0/dialogues_en.json",
+    "es_path": "msq/01_arr_2_0/dialogues_es.json",
+    "total_keys": 7407,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/01_arr_2_0/duty_list_en.json",
+    "es_path": "msq/01_arr_2_0/duty_list_es.json",
+    "total_keys": 659,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/01_arr_2_0/journal_en.json",
+    "es_path": "msq/01_arr_2_0/journal_es.json",
+    "total_keys": 1052,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/02_arr_post/dialogues_en.json",
+    "es_path": "msq/02_arr_post/dialogues_es.json",
+    "total_keys": 3086,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/02_arr_post/duty_list_en.json",
+    "es_path": "msq/02_arr_post/duty_list_es.json",
+    "total_keys": 321,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/02_arr_post/journal_en.json",
+    "es_path": "msq/02_arr_post/journal_es.json",
+    "total_keys": 476,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/03_heavensward/dialogues_en.json",
+    "es_path": "msq/03_heavensward/dialogues_es.json",
+    "total_keys": 4647,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/03_heavensward/duty_list_en.json",
+    "es_path": "msq/03_heavensward/duty_list_es.json",
+    "total_keys": 500,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/03_heavensward/journal_en.json",
+    "es_path": "msq/03_heavensward/journal_es.json",
+    "total_keys": 760,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/04_stormblood/dialogues_en.json",
+    "es_path": "msq/04_stormblood/dialogues_es.json",
+    "total_keys": 6477,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/04_stormblood/duty_list_en.json",
+    "es_path": "msq/04_stormblood/duty_list_es.json",
+    "total_keys": 658,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/04_stormblood/journal_en.json",
+    "es_path": "msq/04_stormblood/journal_es.json",
+    "total_keys": 478,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/05_shadowbringers/dialogues_en.json",
+    "es_path": "msq/05_shadowbringers/dialogues_es.json",
+    "total_keys": 8798,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/05_shadowbringers/duty_list_en.json",
+    "es_path": "msq/05_shadowbringers/duty_list_es.json",
+    "total_keys": 725,
+    "translated_keys": 725,
+    "progress": 100.0,
+    "has_es": true
+  },
+  {
+    "path": "msq/05_shadowbringers/journal_en.json",
+    "es_path": "msq/05_shadowbringers/journal_es.json",
+    "total_keys": 532,
+    "translated_keys": 532,
+    "progress": 100.0,
+    "has_es": true
+  },
+  {
+    "path": "msq/06_endwalker/dialogues_en.json",
+    "es_path": "msq/06_endwalker/dialogues_es.json",
+    "total_keys": 11178,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/06_endwalker/duty_list_en.json",
+    "es_path": "msq/06_endwalker/duty_list_es.json",
+    "total_keys": 838,
+    "translated_keys": 573,
+    "progress": 68.4,
+    "has_es": true
+  },
+  {
+    "path": "msq/06_endwalker/journal_en.json",
+    "es_path": "msq/06_endwalker/journal_es.json",
+    "total_keys": 535,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/07_dawntrail/dialogues_en.json",
+    "es_path": "msq/07_dawntrail/dialogues_es.json",
+    "total_keys": 10199,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/07_dawntrail/duty_list_en.json",
+    "es_path": "msq/07_dawntrail/duty_list_es.json",
+    "total_keys": 735,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "msq/07_dawntrail/journal_en.json",
+    "es_path": "msq/07_dawntrail/journal_es.json",
+    "total_keys": 483,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "other/dialogues_en.json",
+    "es_path": "other/dialogues_es.json",
+    "total_keys": 24368,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "other/duty_list_en.json",
+    "es_path": "other/duty_list_es.json",
+    "total_keys": 1741,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "other/journal_en.json",
+    "es_path": "other/journal_es.json",
+    "total_keys": 2518,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "sidequests/dialogues_en.json",
+    "es_path": "sidequests/dialogues_es.json",
+    "total_keys": 57613,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "sidequests/duty_list_en.json",
+    "es_path": "sidequests/duty_list_es.json",
+    "total_keys": 6445,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "sidequests/journal_en.json",
+    "es_path": "sidequests/journal_es.json",
+    "total_keys": 7410,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "ui/ui_strings_en.json",
+    "es_path": "ui/ui_strings_es.json",
+    "total_keys": 218751,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "ui_menus/menus_addons_en.json",
+    "es_path": "ui_menus/menus_addons_es.json",
+    "total_keys": 19023,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "ui_menus/system_messages_and_logs_en.json",
+    "es_path": "ui_menus/system_messages_and_logs_es.json",
+    "total_keys": 36407,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "ui_menus/tutorials_and_active_help_en.json",
+    "es_path": "ui_menus/tutorials_and_active_help_es.json",
+    "total_keys": 3937,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  },
+  {
+    "path": "ui_menus/tutorials_and_help_en.json",
+    "es_path": "ui_menus/tutorials_and_help_es.json",
+    "total_keys": 32901,
+    "translated_keys": 0,
+    "progress": 0.0,
+    "has_es": false
+  }
+]

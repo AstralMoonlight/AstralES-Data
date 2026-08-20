@@ -1,0 +1,35 @@
+name: Actualizar Catalogo de Traducciones
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*_es.json' # Solo se dispara si un archivo de traducción fue modificado/aprobado
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Recalcular porcentajes
+        run: python scripts/update_catalog.py
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add file_catalog.json
+          # Si el archivo cambió, hacemos un commit. El [skip ci] evita que la acción se llame a sí misma en un bucle.
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: actualizacion automatica del catalogo [skip ci]"
+          git push

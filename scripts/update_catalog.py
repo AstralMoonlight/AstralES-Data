@@ -1,60 +1,58 @@
 import json
 from pathlib import Path
 
-# Los directorios que contienen traducciones
-ALLOWED_DIRS = [
-    "allied_society", "chronicles", "city_intro", "class_job", 
-    "combat_actions_traits", "msq", "other", "sidequests", "ui", "ui_menus"
-]
+BASE = Path(__file__).parent.parent  # raiz del repo
+
+EXCLUDE_NAMES = {"all_texts"}
+EXCLUDE_DIRS  = {"GLOSSARY"}
 
 def main():
     catalog = []
-    base_path = Path(".")
 
-    for dir_name in ALLOWED_DIRS:
-        folder = base_path / dir_name
-        if not folder.exists():
+    for en_file in sorted(BASE.rglob("*_en.json")):
+        # Excluir all_texts y GLOSSARY
+        if any(p in EXCLUDE_DIRS for p in en_file.parts):
+            continue
+        if any(en_file.stem.startswith(ex) for ex in EXCLUDE_NAMES):
             continue
 
-        # Encontrar todos los archivos _en.json en el directorio
-        for en_file in sorted(folder.rglob("*_en.json")):
-            es_file = en_file.parent / en_file.name.replace("_en.json", "_es.json")
-            
-            # Leer total de líneas originales
-            try:
-                en_data = json.loads(en_file.read_text(encoding="utf-8"))
-                total_keys = len(en_data)
-            except Exception:
-                continue
-            
-            translated_keys = 0
-            has_es = False
-            
-            # Contar líneas traducidas si existe el archivo _es.json
-            if es_file.exists():
-                has_es = True
-                try:
-                    es_data = json.loads(es_file.read_text(encoding="utf-8"))
-                    # Cuenta solo los valores que no están en blanco
-                    translated_keys = sum(1 for v in es_data.values() if str(v).strip())
-                except Exception:
-                    pass
-            
-            progress = round((translated_keys / total_keys * 100), 1) if total_keys > 0 else 0.0
-            
-            catalog.append({
-                "path": en_file.as_posix(),
-                "es_path": es_file.as_posix(),
-                "total_keys": total_keys,
-                "translated_keys": translated_keys,
-                "progress": progress,
-                "has_es": has_es
-            })
+        es_file = en_file.with_name(en_file.name.replace("_en.json", "_es.json"))
 
-    # Guardar el nuevo catálogo
-    catalog_path = base_path / "file_catalog.json"
-    catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Catálogo actualizado: {len(catalog)} archivos procesados.")
+        try:
+            en_data = json.loads(en_file.read_text(encoding="utf-8"))
+            total_keys = len(en_data)
+        except Exception as e:
+            print(f"Error leyendo {en_file}: {e}")
+            continue
+
+        translated_keys = 0
+        has_es = es_file.exists()
+
+        if has_es:
+            try:
+                es_data = json.loads(es_file.read_text(encoding="utf-8"))
+                translated_keys = sum(1 for v in es_data.values() if str(v).strip())
+            except Exception:
+                pass
+
+        progress = round(translated_keys / total_keys * 100, 1) if total_keys > 0 else 0.0
+
+        # Ruta relativa a la raiz del repo, con separador /
+        rel_en = en_file.relative_to(BASE).as_posix()
+        rel_es = es_file.relative_to(BASE).as_posix()
+
+        catalog.append({
+            "path":            rel_en,
+            "es_path":         rel_es,
+            "total_keys":      total_keys,
+            "translated_keys": translated_keys,
+            "progress":        progress,
+            "has_es":          has_es
+        })
+
+    output = BASE / "file_catalog.json"
+    output.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Catalogo actualizado: {len(catalog)} archivos procesados.")
 
 if __name__ == "__main__":
     main()
